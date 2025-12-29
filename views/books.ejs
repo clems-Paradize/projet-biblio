@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des livres</title>
+</head>
+<body>
+    <h1>Liste des livres</h1>
+
+    <a href="/">Retour à l'accueil</a>
+
+    <ul>
+        <% books.forEach(book => { %>
+            <li>
+                <strong><%= book.title %></strong>
+                — <%= book.author_id %>
+                — <%= book.pages %> pages
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
